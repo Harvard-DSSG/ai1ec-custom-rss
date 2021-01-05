@@ -3,19 +3,22 @@
  * Template Name: Custom RSS Template - DSSG
  */
 // $postCount = -1; // The number of posts to show in the feed; if -1, show all
-$args = array(
-  'post_type' => 'ai1ec_event',
-  ''
-)
+echo 'test';
+$test = 5+6;
+echo($test);
+//$args = array(
+//  'post_type' => 'ai1ec_event'
+//);
+
 // $posts = query_posts('showposts=' . $postCount);
 //$the_query = new WP_Query( $args );
 //if($the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post();
 
-$myposts = get_posts($args);
-if($myposts):
-  header('Content-Type: '.feed_content_type('rss-http').'; charset='.get_option('blog_charset'), true);
+//$myposts = get_posts($args);
+//if($myposts):
+//  header('Content-Type: '.feed_content_type('rss-http').'; charset='.get_option('blog_charset'), true);
   ?>
-  <?xml version="1.0" encoding="'.get_option('blog_charset').'"?'.'>
+  <? xml version="1.0" encoding="'.get_option('blog_charset').'"?'.'>
   <rss version="2.0"
           xmlns:content="http://purl.org/rss/1.0/modules/content/"
           xmlns:wfw="http://wellformedweb.org/CommentAPI/"
@@ -49,3 +52,4 @@ if($myposts):
     <?php endwhile; ?>
   </channel>
 </rss>
+</xml>
