@@ -1,0 +1,24 @@
+{
+	"name": "harvard-dssg/ai1ec-custom-rss",
+	"type": "wordpress-plugin",
+	"license": "GPL-2.0-only",
+	"description": "Custom RSS feed for Timely All-in-One Calendar Events plugin",
+	"homepage": "https://github.com/Harvard-DSSG/ai1ec-custom-rss",
+    "authors": [
+        {
+            "name": "Cole Crawford",
+            "email": "cole_crawford@fas.harvard.edu"
+        }
+    ],
+	"config": {
+		"optimize-autoloader": true,
+		"sort-packages": true
+	},
+	"require": {
+		"php": ">=7.1",
+		"composer/installers": "~2.0"
+	},
+	"require-dev": {
+		"php": ">=7.1"
+	}
+}
